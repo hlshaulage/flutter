@@ -224,9 +224,9 @@ void main() {
         .renderObject<RenderSliverCrossAxisGroup>(find.byType(SliverCrossAxisGroup));
     RenderSliver child = sliverCrossAxisRenderObject.firstChild!;
     expect((child.parentData! as SliverPhysicalParentData).paintOffset.dx, equals(0));
-    child = sliverCrossAxisRenderObject.childAfter(child)!;
+    child = sliverCrossAxisRenderObject.childAfter(child);
     expect((child.parentData! as SliverPhysicalParentData).paintOffset.dx, equals(30));
-    child = sliverCrossAxisRenderObject.childAfter(child)!;
+    child = sliverCrossAxisRenderObject.childAfter(child);
     expect((child.parentData! as SliverPhysicalParentData).paintOffset.dx, equals(210));
 
     final RenderSliverCrossAxisGroup renderGroup = tester.renderObject<RenderSliverCrossAxisGroup>(
