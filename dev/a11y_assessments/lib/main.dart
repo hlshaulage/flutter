@@ -27,6 +27,7 @@ class App extends StatelessWidget {
       ),
     );
     final ThemeData darkTheme = ThemeData(
+
       colorScheme: ColorScheme.fromSeed(
         brightness: Brightness.dark,
         seedColor: const Color(0xff6750a4),
